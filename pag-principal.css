@@ -1,0 +1,191 @@
+:root {
+    --primary: #0f0f23;        /* Azul oscuro casi negro */
+    --secondary: #1a1a2e;      /* Azul grisáceo */
+    --accent: #00d4ff;         /* Cyan brillante */
+    --accent2: #ff6b6b;        /* Coral vibrante */
+    --text: #ffffff;           /* Blanco */
+    --text-muted: #a0a0a0;     /* Gris claro */
+    --surface: #16213e;        /* Azul medio */
+    --hover: #0f3460;          /* Azul hover */
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary);
+    color: var(--text);
+    
+}
+.categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.categorias h1 {
+    margin: 0;
+}
+.category {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.cate-cars {
+    border: 1px solid #fff;
+    background-color: var(--surface);
+    color: var(--text);
+    border-radius: 1rem;
+    width: 140px;
+    text-align: center;
+}
+.ba-navegation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;          
+    height: 100vh;   
+    gap: 2rem;
+    background-color: var(--primary);
+    color: var(--text);
+}
+.nav-top {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Agregar esta línea */
+}
+.head-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.text-head {
+    font-size: 1.5rem;
+}
+.img-nav {
+    max-width: 60px;
+    max-height: 60px;
+}
+.car {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cars1 p{ 
+    margin: 0;
+    text-align: center;
+    background-color: var(--secondary);
+}
+.img-car:hover {
+    width: 300px;
+    height: 200px;
+}
+.perfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+}
+.ver-autos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-car {
+    width: 280px;
+    height: 180px;
+    object-fit: cover; 
+    border-radius: 12px;
+}
+
+.dashboard,
+.Assets,
+.sell-cars,
+.services,
+.settings,
+.log-out {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: var(--text);
+}
+.text-nav {
+    margin: 0;
+}
+.ba-navegation div {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+.busqueda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:var(--secondary);
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+.notificacion,
+.perfil {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.icons-group {
+    display: flex;
+    gap: 1rem;
+}
+.search-bar {
+    display: flex;
+    max-width: 500px;
+    flex: 1;
+
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid var(--secondary);
+    color: var(--text);
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: var(--surface);
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: var();
+    cursor: pointer;
+}
+.main-content {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
