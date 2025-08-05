@@ -1,5 +1,5 @@
 :root {
-    --primary: #0f0f23;      
+    --primary: #000;      
     --secondary: #1a1a2e;   
     --accent: #00d4ff;        
     --accent2: #ff6b6b;       
@@ -16,6 +16,7 @@ body {
 
 }
 .content {
+    margin-left: 10vw;  
     display: flex;
     flex-direction: row;
     background-color: var(--primary);
@@ -47,14 +48,14 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    width: fit-content;
+    justify-content: center;
+    gap: 5rem;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
 }
 .cate-cars {
     border: 1px solid #fff;
-    background-color: var(--surface);
     color: var(--text);
     border-radius: 1rem;
     width: 140px;
@@ -64,9 +65,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 150px;          
-    height: 100vh;   
+    min-width: 150px; 
+    width: 10vw;         
+    height: 100%;   
+    position: fixed;
+    left: 0;
+    top: 0;
     gap: 2rem;
+    align-self: stretch;
     background-color: var(--primary);
     color: var(--text);
 }
@@ -150,13 +156,17 @@ a {
 .busqueda {
     background-color:var(--primary);
     margin: 0;
+    width: 100%;
+    padding: 10px;
 }
 .search-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 15px;
 }
 .notificacion,
 .perfil {
@@ -203,9 +213,9 @@ a {
 }
 .car {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
 }
 .cars1 {
     border-radius: 12px;
@@ -216,7 +226,7 @@ a {
 
 .cars1:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 212, 255, 0.2);
+    box-shadow: 15px 30px 20px rgba(240, 240, 240, 0.2);
 }
 
 .nom-car {
@@ -227,14 +237,99 @@ a {
 }
 
 .img-car {
-    width: 110%;
+    width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
 .ver-autos {
+    display: block;
     flex: 1;
     padding: 2rem;
     overflow-y: auto;
+}
+.content-primary {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+}
+@media (max-width: 1200px) {
+    .car {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 950px) {
+    .car {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas */
+        gap: 15px;
+    }
+    
+    .ver-autos {
+        padding: 1.5rem;
+    }
+    .car-primary {
+        padding: 0.5rem;
+    }
+    
+    .car-primary img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .car {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+    
+    .ver-autos {
+        padding: 1rem;
+    }
+    
+    .cars1 {
+        padding: 1rem;
+    }
+    
+    .img-car .car-primary{
+        height: 150px; 
+    }
+    
+    .nom-car {
+        font-size: 1rem;
+    }
+    .car-primary {
+        padding: 0.5rem;
+    }
+    
+    .car-primary img {
+        border-radius: 8px;
+    }
+}
+.car-primary {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.car-primary img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .car-primary img {
+        max-height: 250px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .car-primary img {
+        max-height: 200px;
+    }
 }

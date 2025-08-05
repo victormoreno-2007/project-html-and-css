@@ -1,6 +1,6 @@
 
 :root {
-    --primary: #0f0f23;
+    --primary: #000;
     --secondary: #1a1a2e;
     --accent: #00d4ff;
     --accent2: #ff6b6b;
@@ -167,6 +167,7 @@ a {
     flex: 1;
     padding: 2rem;
     overflow-y: auto;
+
 }
 
 .return-home {
@@ -204,7 +205,6 @@ a {
 }
 
 .car-card {
-    background-color: var(--secondary);
     border-radius: 12px;
     padding: 1.5rem;
     text-align: center;
