@@ -1,13 +1,13 @@
 :root {
     --textcolor: black;
     --textcolor-second: grey;
-    --textcolor-third: purple;
+    --textcolor-third: rgb(0, 19, 128);
     --textcolor-fourth: white;
     --font-primary: 'DM Sans', arial;
     --backgroundcolor: #e0e5ec;
     --backgroundcolor-ligth: #ffffff;
     --backgroundcolor-grey: #485e80;
-    --backgroundcolor-purple: purple;
+    --backgroundcolor-purple: rgb(13, 0, 128);
 
 }
 

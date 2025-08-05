@@ -3,13 +3,13 @@
 :root {
     --textcolor: black;
     --textcolor-second: grey;
-    --textcolor-third: purple;
+    --textcolor-third: rgb(0, 19, 128);
     --textcolor-fourth: white;
     --font-primary: 'DM Sans', arial;
     --backgroundcolor: #e0e5ec;
     --backgroundcolor-ligth: #ffffff;
     --backgroundcolor-grey: #485e80;
-    --backgroundcolor-purple: purple;
+    --backgroundcolor-purple: rgb(13, 0, 128);
 
 }
 
@@ -112,8 +112,8 @@ body {
 }
 
 .box-email {
-    height: 30px;
-    width: 200px;
+    height: 35px;
+    width: 220px;
     border-radius: 20px;
     background: var(--backgroundcolor);
     box-shadow: 10px 10px 20px var(--backgroundcolor-grey), -10px -10px 20px var(--backgroundcolor-ligth);
@@ -127,8 +127,8 @@ body {
 }
 
 .box-password {
-    height: 30px;
-    width: 200px;
+    height: 35px;
+    width: 220px;
     border-radius: 15px;
     background: var(--backgroundcolor);
     box-shadow: 10px 10px 20px var(--backgroundcolor-grey), -10px -10px 20px var(--backgroundcolor-ligth);

@@ -52,7 +52,7 @@ body {
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    background: #071a30;
+    background: var(--primary);
     border-radius: 15px;
 }
 .cont-categoria{
@@ -64,7 +64,7 @@ body {
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    background: #071a30;
+    background: var(--secondary);
     border-radius: 15px;
 }
 .cate-cars {
@@ -215,7 +215,7 @@ a {
 }
 
 .informacion-usuario {
-    background: #fff;
+    background: primary;
     flex: 1;
     padding: 1rem;
     overflow-y: auto;
@@ -231,7 +231,7 @@ a {
 
 .info-usuario {
   width: 100%;
-  background: #071a30;
+  background: var(--primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,7 +244,7 @@ a {
 .form-wrapper {
   width: 100%;
   max-width: 700px;
-  background: #ffffff;
+  background: var(--secondary);
   padding: 1px 5px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -253,13 +253,13 @@ a {
 
 .form-title {
   font-size: 22px;
-  color: #071a30;
+  color: var(--text);
   margin-bottom: 6px;
 }
 
 .form-subtitle {
   font-size: 14px;
-  color: #3c4a60;
+  color: var(--text);
   margin-bottom: 20px;
 }
 
@@ -313,7 +313,7 @@ a {
 
 .photo-usuario {
     width: 100%;
-  background: #071a30;
+  background: var(--primary);
   display: flex;
   flex-direction: space-between ;
   align-items: center;
@@ -326,7 +326,7 @@ a {
 .photo-wrapper{
   width: 100%;
   max-width: 700px;
-  background: #ffffff;
+  background: var(--secondary);
   padding: 5px 15px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -342,13 +342,13 @@ a {
 }
 .photo-title {
   font-size: 22px;
-  color: #071a30;
+  color: var(--text);
   margin-bottom: 6px;
 }
 
 .photo-subtitle {
   font-size: 14px;
-  color: #3c4a60;
+  color: var(--text);
   margin-bottom: 20px;
 }
 
@@ -378,7 +378,7 @@ a {
 
 .social {
       width: 100%;
-  background: #071a30;
+  background: var(--primary);
   display: flex;
   flex-direction: space-between ;
   align-items: center;
@@ -386,13 +386,13 @@ a {
   box-sizing: border-box;
   border-radius: 10px;
   margin-top: 10px;
-  color: #0f0f23;
+  color: var(--text);
 }
 
 .social-wrapper {
     width: 100%;
   max-width: 700px;
-  background: #ffffff;
+  background: var(--secondary);
   padding: 5px 15px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
