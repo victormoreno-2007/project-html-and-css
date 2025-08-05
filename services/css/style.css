@@ -1,0 +1,236 @@
+:root {
+    --primary: #0f0f23;        /* Azul oscuro casi negro */
+    --secondary: #1a1a2e;      /* Azul grisáceo */
+    --accent: #00d4ff;         /* Cyan brillante */
+    --accent2: #ff6b6b;        /* Coral vibrante */
+    --text: #ffffff;           /* Blanco */
+    --text-muted: #a0a0a0;     /* Gris claro */
+    --surface: #16213e;        /* Azul medio */
+    --hover: #0f3460;          /* Azul hover */
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    
+
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary);
+    color: var(--text);
+}
+.search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid var(--surface);
+    background-color: var(--primary);
+    color: var(--text);
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    outline: none;
+}
+.categorias {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  gap: 1.5rem;
+}
+
+
+
+.ba-navegation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 150px;          
+    height: 100vh;   
+    gap: 2rem;
+    background-color: var(--primary);
+    color: var(--text);
+}
+.nav-top {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; 
+}
+.head-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.text-head {
+    font-size: 1.5rem;
+}
+.img-nav {
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.perfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.dashboard,
+.Assets,
+.sell-cars,
+.services,
+.settings,
+.log-out {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: var(--text);
+    border-radius: 8px;
+    transition: background-color 0.1s;
+}
+.dashboard:hover,
+.Assets:hover,
+.sell-cars:hover,
+.services:hover,
+.settings:hover,
+.log-out:hover {
+    background-color: var(--hover);
+}
+.text-nav {
+    margin: 0;
+}
+.ba-navegation div {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.busqueda {
+    background-color:var(--primary);
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+.notificacion,
+.perfil {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.icons-group {
+    display: flex;
+    gap: 1rem;
+}
+.search-bar {
+    display: flex;
+    max-width: 500px;
+    flex: 1;
+
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid var(--secondary);
+    color: var(--text);
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 12px 20px;
+    background-color: var(--surface);
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: var();
+    cursor: pointer;
+}
+
+ .estaciones, .order, .required, .schedule, .summary {
+      background-color: var(--secondary);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 12px;
+      color: var(--text);
+    }
+
+    .section-title {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .station-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+      gap: 10px;
+    }
+
+    .station-grid button {
+      padding: 10px;
+      border: none;
+      background-color: var(--accent);
+      border-radius: 6px;
+      color: var(--primary);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .legend {
+      margin-top: 10px;
+      display: flex;
+      gap: 20px;
+      font-size: 0.9rem;
+    }
+
+    .order-item, .required-item, .schedule-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+    }
+
+    .pay-btn {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      background-color: var(--accent2);
+      color: var(--text);
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    .summary-box {
+      background-color: var(--surface);
+      padding: 10px;
+      border-radius: 8px;
+    }
+  
+
+
