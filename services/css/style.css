@@ -92,6 +92,7 @@ body {
 .dashboard,
 .Assets,
 .sell-cars,
+.booking,
 .services,
 .settings,
 .log-out {
@@ -104,6 +105,7 @@ body {
 }
 .dashboard:hover,
 .Assets:hover,
+.bokking:hover,
 .sell-cars:hover,
 .services:hover,
 .settings:hover,

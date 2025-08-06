@@ -1,6 +1,6 @@
 :root {
-    --primary: #0f0f23;        /* Azul oscuro casi negro */
-    --secondary: #1a1a2e;      /* Azul grisáceo */
+    --primary: #000;       /* Azul oscuro casi negro */
+    --secondary: #100000;      /* Azul grisáceo */
     --accent: #00d4ff;         /* Cyan brillante */
     --accent2: #ff6b6b;        /* Coral vibrante */
     --text: #ffffff;           /* Blanco */
@@ -69,7 +69,7 @@ body {
 }
 .cate-cars {
     border: 1px solid #fff;
-    background-color: var(--surface);
+    background-color: var(--primary);
     color: var(--text);
     border-radius: 1rem;
     width: 140px;
@@ -131,6 +131,7 @@ body {
 
 .dashboard,
 .Assets,
+.booking,
 .sell-cars,
 .services,
 .settings,
@@ -139,11 +140,13 @@ body {
     flex-direction: row;
     gap: 1rem;
     color: var(--text);
+    padding: 0.5rem;
     border-radius: 8px;
-    transition: background-color 0.1s;
+    transition: background-color 0.3s;
 }
 .dashboard:hover,
 .Assets:hover,
+.booking:hover,
 .sell-cars:hover,
 .services:hover,
 .settings:hover,

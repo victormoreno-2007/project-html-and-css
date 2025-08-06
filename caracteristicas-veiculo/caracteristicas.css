@@ -1,6 +1,5 @@
-
 :root {
-    --primary: #0f0f23;
+    --primary: #000;
     --secondary: #1a1a2e;
     --accent: #00d4ff;
     --accent2: #ff6b6b;
@@ -67,7 +66,7 @@ body {
     padding: 1rem;
 }
 
-.dashboard, .Assets, .sell-cars, .services, .settings, .log-out {
+.dashboard, .Assets, .sell-cars,.booking, .services, .settings, .log-out {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -77,7 +76,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.dashboard:hover, .Assets:hover, .sell-cars:hover, .services:hover, .settings:hover, .log-out:hover {
+.dashboard:hover, .Assets:hover,.booking:hover, .sell-cars:hover, .services:hover, .settings:hover, .log-out:hover {
     background-color: var(--hover);
 }
 
@@ -178,7 +177,7 @@ a {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: var(--surface);
+    background-color: var(--primary);
     color: var(--text);
     border-radius: 8px;
     text-decoration: none;
@@ -214,6 +213,7 @@ a {
     height: 100%;
     border-radius: 12px;
     object-fit: cover;
+    object-position: 75% 10%;
     margin-bottom: 1.5rem;
 }
 .img-carac {
@@ -296,13 +296,28 @@ a {
 
 @media (max-width: 1024px) {
     .img-bottom {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(2, 1fr); 
         gap: 0.8rem;
     }
-    
+    .img-carac {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    }
     .imagenes-car {
         height: 180px;
     }
+    .categoria-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .caracteristicas{
+        width: 90%;
+    }
+    .nav-top {
+        
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -314,7 +329,6 @@ a {
         gap: 0.5rem;
         justify-items: center;
     }
-    
     .imagenes-car {
         height: 150px;
     }
@@ -330,13 +344,12 @@ a {
         height: 200px; 
     }
 }
- @media (max-width: 880px) {
+@media (max-width: 880px) {
 
     .categoria-section {
         flex-direction: column;
         align-items: center;
     }
-
     .img-carac {
     display: flex;
     flex-direction: column;
