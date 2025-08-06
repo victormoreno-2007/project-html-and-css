@@ -1,0 +1,210 @@
+:root {
+    --textcolor: black;
+    --textcolor-second: grey;
+    --textcolor-third: rgb(0, 19, 128);
+    --textcolor-fourth: white;
+    --font-primary: 'DM Sans', arial;
+    --backgroundcolor: #e0e5ec;
+    --backgroundcolor-ligth: #ffffff;
+    --backgroundcolor-grey: #485e80;
+    --backgroundcolor-purple: rgb(13, 0, 128);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundcolor);
+    font-family: var(--font-primary);
+}
+
+.main {
+    width: 90%;
+    max-width: 506px;
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--backgroundcolor);
+    box-shadow: 10px 10px 20px var(--backgroundcolor-grey), -10px -10px 20px var(--backgroundcolor-ligth);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.main-inset {
+    background: var(--backgroundcolor);
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px var(--backgroundcolor-grey), inset -10px -10px 20px var(--backgroundcolor-ligth);
+}
+
+.title-header h1 {
+    text-align: left;
+    font-size: 1.9rem;
+}
+
+.title-header a {
+    color: var(--textcolor-third)
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.signin-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 180px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: var(--backgroundcolor);
+    box-shadow: 10px 10px 20px var(--backgroundcolor-grey), -10px -10px 20px var(--backgroundcolor-ligth);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    color: var(--textcolor);
+    justify-content: center;
+}
+
+.signin-button:hover {
+    transform: scale(1.02);
+}
+
+.signin-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.signin-button.google {
+    background-color: #ffffff;
+}
+
+.signin-button.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.separador {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: var(--textcolor-second);
+}
+.box-name {
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    background: var(--backgroundcolor);
+    box-shadow: 10px 10px 20px var(--backgroundcolor-grey), -10px -10px 20px var(--backgroundcolor-ligth);
+}
+
+
+.box-name-inset {
+    background: var(--backgroundcolor);
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px var(--backgroundcolor-grey), inset -10px -10px 20px var(--backgroundcolor-ligth);
+}
+.box-lastname {
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    background: var(--backgroundcolor);
+    box-shadow: 10px 10px 20px var(--backgroundcolor-grey), -10px -10px 20px var(--backgroundcolor-ligth);
+}
+
+
+.box-lastname-inset {
+    background: var(--backgroundcolor);
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px var(--backgroundcolor-grey), inset -10px -10px 20px var(--backgroundcolor-ligth);
+}
+
+.box-email {
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    background: var(--backgroundcolor);
+    box-shadow: 10px 10px 20px var(--backgroundcolor-grey), -10px -10px 20px var(--backgroundcolor-ligth);
+}
+
+
+.box-email-inset {
+    background: var(--backgroundcolor);
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px var(--backgroundcolor-grey), inset -10px -10px 20px var(--backgroundcolor-ligth);
+}
+
+.box-password {
+    height: 30px;
+    width: 200px;
+    border-radius: 15px;
+    background: var(--backgroundcolor);
+    box-shadow: 10px 10px 20px var(--backgroundcolor-grey), -10px -10px 20px var(--backgroundcolor-ligth);
+}
+
+.box-password-inset {
+    background: var(--backgroundcolor);
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 20px var(--backgroundcolor-grey), inset -10px -10px 20px var(--backgroundcolor-ligth);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    margin: 15px 0;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    color: var(--textcolor-second);
+    gap: 15px;
+}
+
+.remember-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.forgot-link {
+    text-decoration: none;
+    color: var(--textcolor-third);
+    font-weight: 500;
+}
+
+.btn-signin {
+    width: 220px;
+    padding: 12px 0;
+    border-radius: 30px;
+    background: var(--backgroundcolor-purple);
+    box-shadow: 10px 10px 20px var(--backgroundcolor-grey), -10px -10px 20px var(--backgroundcolor-ligth);
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--textcolor-fourth);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.btn-signin:hover {
+    transform: scale(1.02);
+}

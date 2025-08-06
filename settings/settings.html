@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings</title>
+    <link rel="stylesheet" href="/settings/css/style.css">
+</head>
+
+<body>
+    <main class="content">
+        <section class="ba-navegation">
+            <div class="head-nav">
+                <img src="/img/logos/logo-mazda.png" alt="logo mazda" class="img-nav">
+                <p class="text-head">mazda</p>
+            </div>
+            <div class="nav-top">
+                <a href="../pag-principal.html">
+                    <div class="dashboard">
+                        <img src="/img/logos/dashboard icon.svg" alt="logo dashboard" class="img">
+                        <!-- pantalla principal -->
+                        <p class="text-nav">Dashboard</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="Assets">
+                        <img src="/img/logos/assets.png" alt="logo assets">
+                        <!--muestre todos los autos -->
+                        <p class="text-nav">Assets</p>
+                    </div>
+                </a>
+                <a href="../booking/index.html">
+                    <div class="booking">
+                        <img src="../img/logos/booking.png" alt="logo sell cars"> <!--mostrar para la venta de carros -->
+                        <p class="text-nav">Boking</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="sell-cars">
+                        <img src="/img/logos/booking.png" alt="logo sell cars">
+                        <!--mostrar para la venta de carros -->
+                        <p class="text-nav">Sell cars</p>
+                    </div>
+                </a>
+                <a href="../services/services.html">
+                    <div class="services">
+                        <img src="/img/logos/sell-cars.svg" alt="logo services">
+                        <!--muestre los servicios -->
+                        <p class="text-nav">Services</p>
+                    </div>
+                </a>
+            </div>
+            <div class="footer-nav">
+                <a href="settings.html">
+                    <div class="settings">
+                        <img src="/img/logos/setting.svg" alt="logo setting">
+                        <!--muestre ajustes -->
+                        <p class="text-nav">Setting</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="log-out">
+                        <img src="/img/logos/logout.svg" alt="logo log out"> <!--salir -->
+                        <p class="text-nav">log uot</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="categorias">
+            <article class="busqueda">
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar vehículos..." class="search-input">
+                        <button class="search-button">🔍</button>
+                    </div>
+                    <div class="icons-group">
+                        <img class="notificacion" src="/img/logos/notification.svg"
+                            alt="logo de notificaciones">
+                        <img class="perfil" src="/img/logos/logo-perfil.png" alt="logo de perfil">
+                    </div>
+                </div>
+            </article>
+
+            <div class="informacion-usuario">
+                <h1 style="color: white; display: flex; justify-content: flex-start;">Settings</h1>
+                <div class="categoria">
+                    <div class="cont-categoria">
+                        <a href="#">
+                            <div class="cate-cars">
+                                <p class="text-categoria">My details</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="cate-cars">
+                                <p class="text-categoria">profile</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="cate-cars">
+                                <p class="text-categoria">password</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="cate-cars">
+                                <p class="text-categoria">email</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="cate-cars">
+                                <p class="text-categoria">notificacion</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="info-usuario">
+                    <div class="form-wrapper">
+                        <h2 class="form-title">Profile</h2>
+                        <p class="form-subtitle">Update your photo and personal details here.</p>
+
+                        <form class="form-grid">
+                            <div class="form-field">
+                                <label for="live-in">Live in</label>
+                                <div class="btn-icon">
+                                    <span>🏠</span>
+                                    <input type="text" id="live-in" placeholder="Zuichi, Switzerland">
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="street-address">Street Address</label>
+                                <div class="btn-icon">
+                                    <span>🏡</span>
+                                    <input type="text" id="street-address" placeholder="2445 Crosswind Drive">
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">Email Address</label>
+                                <div class="btn-icon">
+                                    <span>📧</span>
+                                    <input type="email" id="email" placeholder="uihutofficial@gmail.com">
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="dob">Date Of Birth</label>
+                                <div class="btn-icon">
+                                    <span>🎂</span>
+                                    <input type="date" id="dob">
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="gender">Gender</label>
+                                <div class="btn-icon">
+                                    <span>⚧️</span>
+                                    <select id="gender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="photo-usuario">
+                    <div class="photo-wrapper">
+                        <div class="photo-info">
+                            <h2 class="photo-title">Your photo</h2>
+                            <p class="photo-subtitle">This will be displayed on your profile.</p>
+                        </div>
+                        <div class="logophoto">
+                            <img src="img/logos/logophoto.svg" alt="logophoto">
+                        </div>
+                        <div class="btn-info">
+                            <button class="btn-delete">Delete</button>
+                            <button class="btn-update">Update</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <div class="social-wrapper">
+                    <h1 class="social-title">Social Profiles</h1>
+                    <div class="social-form">
+                        <input type="text" class="btn-facebook" placeholder="    facebook.com/" />
+                        <input type="text" class="btn-twitter" placeholder="    twitter.com/" />
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+
+</html>
+
+</html>
