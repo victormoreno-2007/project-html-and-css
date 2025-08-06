@@ -1,5 +1,5 @@
 :root {
-    --primary: #0f0f23;        /* Azul oscuro casi negro */
+    --primary: #000;        /* Azul oscuro casi negro */
     --secondary: #1a1a2e;      /* Azul grisáceo */
     --accent: #00d4ff;         /* Cyan brillante */
     --accent2: #ff6b6b;        /* Coral vibrante */
@@ -92,6 +92,7 @@ body {
 .dashboard,
 .Assets,
 .sell-cars,
+.booking,
 .services,
 .settings,
 .log-out {
@@ -99,11 +100,13 @@ body {
     flex-direction: row;
     gap: 1rem;
     color: var(--text);
+    padding: 0.5rem;
     border-radius: 8px;
-    transition: background-color 0.1s;
+    transition: background-color 0.3s;
 }
 .dashboard:hover,
 .Assets:hover,
+.booking:hover,
 .sell-cars:hover,
 .services:hover,
 .settings:hover,
@@ -151,7 +154,7 @@ a {
 .search-input {
     flex: 1;
     padding: 12px 20px;
-    border: 2px solid var(--secondary);
+    border: 2px solid var(--primary);
     color: var(--text);
     border-radius: 25px 0 0 25px;
     font-size: 16px;
@@ -167,7 +170,7 @@ a {
 }
 
  .estaciones, .order, .required, .schedule, .summary {
-      background-color: var(--secondary);
+      background-color: var(--primary);
       margin: 20px;
       padding: 20px;
       border-radius: 12px;
@@ -227,7 +230,7 @@ a {
     }
 
     .summary-box {
-      background-color: var(--surface);
+      background-color: var(--primary);
       padding: 10px;
       border-radius: 8px;
     }

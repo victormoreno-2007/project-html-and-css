@@ -49,6 +49,7 @@ body {
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
+    gap: 5rem;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
@@ -59,10 +60,6 @@ body {
     border-radius: 1rem;
     width: 140px;
     text-align: center;
-    transition: background-color 0.3s;
-}
-.cate-cars:hover {
-   background-color: var(--hover);
 }
 .ba-navegation {
     display: flex;
@@ -261,21 +258,16 @@ a {
 }
 @media (max-width: 1200px) {
     .car {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
     }
-    .busqueda{
-        margin-left: 10vh;
-    }   
 }
 
 @media (max-width: 950px) {
     .car {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas */
         gap: 15px;
     }
-    .category {
-        flex-wrap: wrap;
-    }
+    
     .ver-autos {
         padding: 1.5rem;
     }
@@ -310,7 +302,6 @@ a {
         font-size: 1rem;
     }
     .car-primary {
-
         padding: 0.5rem;
     }
     
@@ -328,7 +319,7 @@ a {
     width: 100%;
     height: auto;
     max-width: 100%;
-    object-fit: cover;
+    object-fit: cover; 
     display: block;
 }
 
@@ -337,17 +328,10 @@ a {
         max-height: 250px;
         max-width: 90%;
     }
-    .category {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 15px;
-        padding: 15px;
-    }
-    .cate-cars {
-        width: calc(50% - 0.4rem);  
-        min-width: 120px;
-        max-width: 200px;
-    }
-    .busqueda{
-        margin-left: 10vh;
+}
+
+@media (max-width: 480px) {
+    .car-primary img {
+        max-height: 200px;
     }
 }

@@ -67,7 +67,7 @@ body {
     padding: 1rem;
 }
 
-.dashboard, .Assets, .sell-cars, .services, .settings, .log-out {
+.dashboard, .Assets,.booking, .sell-cars, .services, .settings, .log-out {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -77,7 +77,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.dashboard:hover, .Assets:hover, .sell-cars:hover, .services:hover, .settings:hover, .log-out:hover {
+.dashboard:hover, .Assets:hover,.booking:hover, .sell-cars:hover, .services:hover, .settings:hover, .log-out:hover {
     background-color: var(--hover);
 }
 
@@ -179,7 +179,7 @@ a {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: var(--surface);
+    background-color: var(--primary);
     color: var(--text);
     border-radius: 8px;
     text-decoration: none;
