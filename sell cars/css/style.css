@@ -1,5 +1,5 @@
 :root {
-    --primary: #0f0f23;        /* Azul oscuro casi negro */
+    --primary: #000;        /* Azul oscuro casi negro */
     --secondary: #1a1a2e;      /* Azul grisáceo */
     --accent: #00d4ff;         /* Cyan brillante */
     --accent2: #ff6b6b;        /* Coral vibrante */
@@ -98,6 +98,7 @@ body {
 
 .dashboard,
 .Assets,
+.booking,
 .sell-cars,
 .services,
 .settings,
@@ -106,11 +107,13 @@ body {
     flex-direction: row;
     gap: 1rem;
     color: var(--text);
+    padding: 0.5rem;
     border-radius: 8px;
-    transition: background-color 0.1s;
+    transition: background-color 0.3s;
 }
 .dashboard:hover,
 .Assets:hover,
+.booking:hover,
 .sell-cars:hover,
 .services:hover,
 .settings:hover,
@@ -197,7 +200,7 @@ a {
 
 /* Tarjeta del coche */
 .car-card {
-  background-color: var(--surface);
+  background-color: var(--primary);
   border-radius: 16px;
   padding: 1.5rem;
   flex: 1;
@@ -217,11 +220,15 @@ a {
 
 /* Historial de seguimiento */
 .tracking-card {
-  background-color: var(--surface);
+  background-color: var(--primary);
   border-radius: 16px;
   padding: 1.5rem;
   flex: 1;
   min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .tracking-card h3 {
@@ -275,7 +282,7 @@ a {
 
 .tag {
   padding: 0.5rem 1rem;
-  background-color: var(--hover);
+  background-color: var(--primary);
   border: none;
   color: var(--text);
   border-radius: 12px;
@@ -290,11 +297,11 @@ a {
 }
 
 .offer {
-  background-color: var(--surface);
+  background-color: var(--primary);
   padding: 1.5rem;
   border-radius: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -320,8 +327,17 @@ a {
 
 .offer .stats {
   text-align: center;
+  justify-content: center;
+  flex: 1;
 }
-
+.offer .stats  {
+  flex: 1;
+  display: flex;              
+  flex-direction: column;    
+  align-items: center;        
+  justify-content: center;    
+  text-align: center;
+}
 .offer .stats .circle {
   width: 60px;
   height: 60px;
@@ -337,8 +353,9 @@ a {
 
 .offer .values {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  flex-direction: row;
+  flex: 1;
+  gap: 4rem;
   text-align: right;
 }
 
