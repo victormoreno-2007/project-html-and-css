@@ -234,6 +234,63 @@ a {
       padding: 10px;
       border-radius: 8px;
     }
-  
+ @media screen and (min-width: 1025px) {
+      .content {
+        flex-direction: row;
+      }
+
+      .categorias {
+        flex-direction: column;
+        flex: 1;
+        gap: 2rem;
+        padding: 30px;
+      }
+
+      .estaciones, .required, .schedule, .summary {
+        flex: 1 1 50%;
+        margin: 10px;
+      }
+
+      .search-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .station-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 130px));
+        gap: 10px;
+        padding: 0px 0px 0px 100px;
+      }
+      .section-title{
+        padding: 0px 0px 0px 35px;
+      }
+      .legend {
+        padding: 0px 0px 0px 35px;
+      }
+      .order{
+        width: 90%;
+      }
+     
+      .station-grid button {
+        
+        height: 70px;
+        width: 120px;
+        border: none;
+        background-color: var(--accent);
+        border-radius: 6px;
+        color: var(--primary);
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        
+      }
+      
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+    }
 
 
